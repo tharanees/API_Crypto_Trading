@@ -1,4 +1,4 @@
-#Run after all sell orders are filled. This calculates the profit on each trade after all sell orders filled
+#Run after all sell orders are filled. This calculates the profit on each trade after all sell orders filled and is written on the data.csv file
 
 from binance.client import Client
 from binance.enums import *
@@ -25,7 +25,8 @@ reader = csv.reader(file)
 df = pd.read_csv("data.csv")
 n= len(list(reader))-1
 
-d0 = datetime(2021, 12, 4,0,0,0,0) #enter london date time when the first coin from list was sold
+# datetime(year, month, day, hour, minute, second, microsecond)
+d0 = datetime("FILL IN GMT DATETIME WHEN THE FIRST CRYPTO SELL LIMIT WAS FILLED") 
 d1 = datetime.now()
 
 file = open("data.csv")
