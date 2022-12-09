@@ -1,3 +1,4 @@
+#Used when you want to buy a long list of coins (e.g. 50 different cryptos) on spot market.
 from binance.client import Client
 from binance.enums import *
 from binance.exceptions import BinanceAPIException, BinanceOrderException
