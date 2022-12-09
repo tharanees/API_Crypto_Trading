@@ -1,5 +1,4 @@
-##############################################################################################################
-# calculates the profit on each trade after all sell orders filled
+#Run after all sell orders are filled. This calculates the profit on each trade after all sell orders filled
 
 from binance.client import Client
 from binance.enums import *
@@ -17,8 +16,8 @@ def round_down(n, decimals=0):
     multiplier = 10 ** decimals
     return math.floor(n * multiplier) / multiplier
 
-api_key = ""
-api_secret = ""
+api_key = "FILL IN YOUR API KEY"
+api_secret = "FILL IN YOUR API SECRET CODE"
 client = Client(api_key, api_secret)
 
 file = open("data.csv")
