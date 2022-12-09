@@ -63,6 +63,7 @@ for count in range (Number):
     df.loc[count, 'COIN'] = coin
     df.loc[count, 'DP1'] = dp1
     df.loc[count, 'DP2'] = dp2
+    #this transaction is recorded in csv file
     df.to_csv("data.csv", index=False)
 
     #places the buy limit order for it to be filled.
